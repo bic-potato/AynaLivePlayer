@@ -23,5 +23,5 @@ jobs:
 
     - name: Build
 
-      run: go build -o AynaLivePlayer.exe -ldflags -H=windowsgui app/gui/main.go
+      run: GOOS=Windows go build -o AynaLivePlayer.exe -ldflags -H=windowsgui app/gui/main.go
 
