@@ -19,6 +19,6 @@ jobs:
         go-version: 1.18
 
     - name: Build
-      run: apt install mpy
+      run: apt install mpv
       run: go build -o AynaLivePlayer.exe -ldflags -H=windowsgui app/gui/main.go
 
