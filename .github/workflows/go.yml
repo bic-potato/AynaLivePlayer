@@ -17,8 +17,11 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: 1.18
+        
+    - name: Add Dependency
+      run: apt install mpv
 
     - name: Build
-      run: apt install mpv
+
       run: go build -o AynaLivePlayer.exe -ldflags -H=windowsgui app/gui/main.go
 
