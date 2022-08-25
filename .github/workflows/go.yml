@@ -19,7 +19,7 @@ jobs:
         go-version: 1.18
         
     - name: Add Dependency
-      run: apt install mpv
+      run: sudo apt install mpv
 
     - name: Build
 
