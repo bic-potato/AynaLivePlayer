@@ -24,11 +24,6 @@ jobs:
 
     - uses: actions/checkout@v3
 
-
-        
-    - name: Add Dependency
-      run: sudo apt install mpv
-
     - name: Build
 
       run: go build -o AynaLivePlayer.exe -ldflags -H=windowsgui app/gui/main.go
